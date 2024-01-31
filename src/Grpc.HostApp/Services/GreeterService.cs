@@ -1,4 +1,5 @@
 using Grpc.Core;
+using AnyNamespace;
 
 namespace Grpc.HostApp.Services;
 

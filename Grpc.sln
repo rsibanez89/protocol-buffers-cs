@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4C078FB5-975
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grpc.HostApp", "src\Grpc.HostApp\Grpc.HostApp.csproj", "{17095506-34C2-4893-A775-69346CF63FFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grpc.Client", "src\Grpc.Client\Grpc.Client.csproj", "{A0E2A391-B99A-467D-A15C-9C6870B8A198}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,8 +22,13 @@ Global
 		{17095506-34C2-4893-A775-69346CF63FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17095506-34C2-4893-A775-69346CF63FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17095506-34C2-4893-A775-69346CF63FFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0E2A391-B99A-467D-A15C-9C6870B8A198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0E2A391-B99A-467D-A15C-9C6870B8A198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0E2A391-B99A-467D-A15C-9C6870B8A198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0E2A391-B99A-467D-A15C-9C6870B8A198}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{17095506-34C2-4893-A775-69346CF63FFF} = {4C078FB5-975C-4FE1-9EC3-AE442322BECE}
+		{A0E2A391-B99A-467D-A15C-9C6870B8A198} = {4C078FB5-975C-4FE1-9EC3-AE442322BECE}
 	EndGlobalSection
 EndGlobal
