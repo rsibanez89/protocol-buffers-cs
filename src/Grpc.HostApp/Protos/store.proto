@@ -2,12 +2,26 @@ syntax = "proto3";
 
 option csharp_namespace = "AnyNamespace";
 
+import "google/api/annotations.proto";
+
 package store;
 
 service Store {
-    rpc GetProduct (GetProductRequest) returns (GetProductResponse);
-    rpc GetAllProducts (GetAllProductsRequest) returns (GetAllProductsResponse);
-    rpc DeleteProduct (DeleteProductRequest) returns (GetAllProductsResponse);
+    rpc GetProduct (GetProductRequest) returns (GetProductResponse) {
+        option (google.api.http) = {
+            get: "/v1/products/{productId}"
+        };
+    };
+    rpc GetAllProducts (GetAllProductsRequest) returns (GetAllProductsResponse){
+        option (google.api.http) = {
+            get: "/v1/products"
+        };
+    };
+    rpc DeleteProduct (DeleteProductRequest) returns (GetAllProductsResponse){
+        option (google.api.http) = {
+            delete: "/v1/products/{productId}"
+        };
+    };
 }
 
 message GetProductRequest {
